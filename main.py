@@ -30,19 +30,19 @@ timestarted = timedelta(seconds=int(time.time()))
 
 @app.on_message(filters.command('start'))
 def start(client,message):
-    kb = [[InlineKeyboardButton('Channel 🛡', url="https://t.me/JayBeeBots"),InlineKeyboardButton('Support Group 🔰', url="https://t.me/JayBeeBotsSupport")]]
+    kb = [[InlineKeyboardButton(🏴'Channel🛡', url="https://t.me/mdisk_bots"),InlineKeyboardButton('🍿24×7Movies🔰', url="https://t.me/blackest_harbour")]]
     reply_markup = InlineKeyboardMarkup(kb)
-    app.send_message(chat_id=message.from_user.id, text=f"Hello there, I am a __**Subtitle Downloader Bot**__.\nGive me a Movie/Series name and I will fetch it from __**Subscene**__.\n\n"
-                                                        "__**Developer :**__ __@JayBeeDev__\n"
+    app.send_message(chat_id=message.from_user.id, text=f"Hello there, I am a __**Subtitle Downloader Bot**__.\nGive me a Movie/Series name and I will fetch Subtitles from __**Subscene**__.\n\n"
+                                                        "__**Developer :**__ __@sigma_male_007__\n"
                                                         "__**Language :**__ __Python__\n"
-                                                        "__**Framework :**__ __🔥 Pyrogram__",
+                                                        "__**Framework :**__ __ Pyrogram__",
                      parse_mode='md',
                      reply_markup=reply_markup)
 
 @app.on_message(filters.command('help'))
 def help(client,message):
-    url = [[InlineKeyboardButton(f"PayPal Me ❤️", url=f"https://paypal.me/JayBeeDev")],
-           [InlineKeyboardButton(f"Buy Me A Coffee ☕️", url=f"https://buymeacoffee.com/JayBee.Dev")]]
+    url = [[InlineKeyboardButton(f"💥Main Channel💥", url=f"https://t.me/z_harbour")],
+           [InlineKeyboardButton(f"🍿Request Movies🍿", url=f"https://z_harbour")]]
     reply_markup = InlineKeyboardMarkup(url)
     message.reply_text(reply_to_message_id= message.message_id,text=f"Send me any Movie/Series name and I will -\n"
     f"__ * Search for it on `Subscene.com`\n"
