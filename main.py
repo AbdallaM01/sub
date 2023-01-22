@@ -36,7 +36,8 @@ def start(client,message):
                                                         "__**Developer :**__ __@sigma_male_007__\n"
                                                         "__**Language :**__ __Python__\n"
                                                         "__**Framework :**__ __ Pyrogram__\n"
-                                                        "__**Hosted On :**__ __ V.P.S__",,
+                                                        "__**Hosted On :**__ __ V.P.S__"
+                    
                      parse_mode='md',
                      reply_markup=reply_markup)
 
