@@ -45,7 +45,7 @@ def start(client,message):
 @app.on_message(filters.command('help'))
 def help(client,message):
     url = [[InlineKeyboardButton(f"💥Main Channel💥", url=f"https://t.me/z_harbour")],
-           [InlineKeyboardButton(f"🍿Request Movies🍿", url=f"https://t.me/_harbour")]]
+           [InlineKeyboardButton(f"🍿Request Movies🍿", url=f"https://t.me/z_harbour_files")]]
     reply_markup = InlineKeyboardMarkup(url)
     message.reply_text(reply_to_message_id= message.message_id,text=f"Send me any Movie/Series name and I will -\n"
     f"__ * Search for it on `Subscene.com`\n"
