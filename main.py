@@ -30,13 +30,14 @@ timestarted = timedelta(seconds=int(time.time()))
 
 @app.on_message(filters.command('start'))
 def start(client,message):
-    kb = [[InlineKeyboardButton(🏴'Channel🛡', url="https://t.me/mdisk_bots"),InlineKeyboardButton('🍿24×7Movies🔰', url="https://t.me/blackest_harbour")]]
+    kb = [[InlineKeyboardButton('Channel 🛡', url="https://t.me/mdisk_bots"),InlineKeyboardButton('Group 🍿', url="https://t.me/blackest_harbour")]]
+    
     reply_markup = InlineKeyboardMarkup(kb)
     app.send_message(chat_id=message.from_user.id, text=f"Hello there, I am a __**Subtitle Downloader Bot**__.\nGive me a Movie/Series name and I will fetch Subtitles from __**Subscene**__.\n\n"
                                                         "__**Developer :**__ __@sigma_male_007__\n"
                                                         "__**Language :**__ __Python__\n"
                                                         "__**Framework :**__ __ Pyrogram__\n"
-                                                        "__**Hosted On :**__ __ V.P.S__"
+                                                        "__**Hosted On :**__ __ V.P.S__",
                     
                      parse_mode='md',
                      reply_markup=reply_markup)
