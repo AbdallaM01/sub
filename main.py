@@ -35,14 +35,15 @@ def start(client,message):
     app.send_message(chat_id=message.from_user.id, text=f"Hello there, I am a __**Subtitle Downloader Bot**__.\nGive me a Movie/Series name and I will fetch Subtitles from __**Subscene**__.\n\n"
                                                         "__**Developer :**__ __@sigma_male_007__\n"
                                                         "__**Language :**__ __Python__\n"
-                                                        "__**Framework :**__ __ Pyrogram__",
+                                                        "__**Framework :**__ __ Pyrogram__\n"
+                                                        "__**Hosted On :**__ __ V.P.S__",,
                      parse_mode='md',
                      reply_markup=reply_markup)
 
 @app.on_message(filters.command('help'))
 def help(client,message):
     url = [[InlineKeyboardButton(f"💥Main Channel💥", url=f"https://t.me/z_harbour")],
-           [InlineKeyboardButton(f"🍿Request Movies🍿", url=f"https://z_harbour")]]
+           [InlineKeyboardButton(f"🍿Request Movies🍿", url=f"https://t.me/_harbour")]]
     reply_markup = InlineKeyboardMarkup(url)
     message.reply_text(reply_to_message_id= message.message_id,text=f"Send me any Movie/Series name and I will -\n"
     f"__ * Search for it on `Subscene.com`\n"
